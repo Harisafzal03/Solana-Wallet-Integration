@@ -24,9 +24,13 @@ export default function CreateSubaccountButton() {
         // You'd ideally refresh the subaccounts list here
       }, 1500);
       
-    } catch (error: any) {
+    } catch (error) {
       console.error("Error creating subaccount:", error);
-      alert("Failed to create subaccount: " + error.message);
+      if (error instanceof Error) {
+        alert("Failed to create subaccount: " + error.message);
+      } else {
+        alert("Failed to create subaccount: An unknown error occurred.");
+      }
       setIsLoading(false);
     }
   };

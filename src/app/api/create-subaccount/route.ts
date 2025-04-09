@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-export async function POST(request: Request) {
+export async function POST() {
   try {
     // In a real implementation, this would:
     // 1. Get the user's public key from a JWT or another auth method

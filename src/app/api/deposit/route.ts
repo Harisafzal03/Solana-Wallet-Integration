@@ -1,6 +1,4 @@
 import { NextResponse } from 'next/server';
-import { Connection, Keypair, PublicKey, Transaction } from '@solana/web3.js';
-import { DriftClient, Wallet } from '@drift-labs/sdk';
 
 export async function POST(request: Request) {
   try {

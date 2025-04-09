@@ -68,8 +68,8 @@ export default function PlaceOrderModal({
         alert(`${direction === "long" ? "Buy" : "Sell"} ${size} ${markets[marketIndex].name} order placed successfully!`);
       }, 1000);
       
-    } catch (err: any) {
-      setError(err.message || "Failed to place order");
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to place order");
       setIsLoading(false);
     }
   };

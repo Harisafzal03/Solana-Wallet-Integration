@@ -1,6 +1,6 @@
 "use client";
 
-import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
+// import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import { 
@@ -19,7 +19,7 @@ export default function ClientProviders({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const network = WalletAdapterNetwork.Devnet;
+//   const network = WalletAdapterNetwork.Devnet;
   const endpoint = useMemo(
     () => process.env.NEXT_PUBLIC_RPC_URL || "https://api.devnet.solana.com",
     []

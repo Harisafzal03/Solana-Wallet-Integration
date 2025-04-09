@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
-import { PublicKey } from "@solana/web3.js";
+// import { PublicKey } from "@solana/web3.js";
 
 export default function DepositModal({ 
   isOpen, 
@@ -53,7 +53,7 @@ export default function DepositModal({
         throw new Error(errorData.error || "Failed to deposit");
       }
 
-      const { transaction: serializedTransaction } = await response.json();
+    //   const { transaction: serializedTransaction } = await response.json();
       
       // Sign and send transaction (simplified - would need proper implementation)
       // const transaction = Transaction.from(Buffer.from(serializedTransaction, 'base64'));
@@ -66,8 +66,8 @@ export default function DepositModal({
         alert(`Deposit of ${amount} to subaccount ${subAccountId} simulated successfully!`);
       }, 1000);
       
-    } catch (err: any) {
-      setError(err.message || "Failed to deposit");
+    } catch (err) {
+      setError((err instanceof Error ? err.message : "Failed to deposit"));
       setIsLoading(false);
     }
   };

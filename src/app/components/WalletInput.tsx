@@ -7,7 +7,7 @@ import { useDriftStore } from "../store/driftStore";
 
 export default function WalletInput() {
   const wallet = useWallet();
-  const { selectedAuthority, setSelectedAuthority } = useDriftStore();
+  const { setSelectedAuthority } = useDriftStore();
   const [inputAddress, setInputAddress] = useState("");
   const [error, setError] = useState<string | null>(null);
 

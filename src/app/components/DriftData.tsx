@@ -25,9 +25,9 @@ export default function DriftData() {
         }
         const data = await response.json();
         setMarketData(data.markets || []);
-      } catch (error: any) {
+      } catch (error) {
         console.error('Error fetching Drift data:', error);
-        setError(error.message || 'Failed to fetch Drift data. Please try again later.');
+        setError((error instanceof Error ? error.message : 'Failed to fetch Drift data. Please try again later.'));
       }
     };
 

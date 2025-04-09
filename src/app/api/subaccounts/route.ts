@@ -18,6 +18,7 @@ export async function GET(request: Request) {
     try {
       authorityPubkey = new PublicKey(authorityString);
     } catch (error) {
+        console.error('Error fetching authorityPubkey:', error);
       return NextResponse.json(
         { error: 'Invalid "authority" public key.' },
         { status: 400 }

@@ -61,8 +61,8 @@ export default function WithdrawModal({
         alert(`Withdrawal of ${amount} from subaccount ${subAccountId} simulated successfully!`);
       }, 1000);
       
-    } catch (err: any) {
-      setError(err.message || "Failed to withdraw");
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to withdraw");
       setIsLoading(false);
     }
   };

@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { useDriftStore } from "../store/driftStore";
-import { PublicKey } from "@solana/web3.js";
 import DepositModal from "./modals/DepositModal";
 import WithdrawModal from "./modals/WithdrawModal";
 import PlaceOrderModal from "./modals/PlaceOrderModal";
@@ -67,9 +66,9 @@ export default function SubaccountsList() {
         
         const data = await response.json();
         setUserAccounts(data.userAccounts || []);
-      } catch (err: any) {
+      } catch (err) {
         console.error("Error fetching subaccounts:", err);
-        setError(err.message || "Failed to fetch subaccounts");
+        setError(err instanceof Error ? err.message : "Failed to fetch subaccounts");
       } finally {
         setLoading(false);
       }
