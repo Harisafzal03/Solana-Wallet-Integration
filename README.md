@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+SOLANA-WALLET-INTEGRATION
+=========================
 
-## Getting Started
+_Empower Your Wallet, Elevate Your Experience_
 
-First, run the development server:
+![last-commit](https://img.shields.io/github/last-commit/Harisafzal03/Solana-Wallet-Integration?style=flat&logo=git&logoColor=white&color=0080ff) ![repo-top-language](https://img.shields.io/github/languages/top/Harisafzal03/Solana-Wallet-Integration?style=flat&color=0080ff) ![repo-language-count](https://img.shields.io/github/languages/count/Harisafzal03/Solana-Wallet-Integration?style=flat&color=0080ff)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+_Built with the tools and technologies:_
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![JSON](https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white) ![Markdown](https://img.shields.io/badge/Markdown-000000.svg?style=flat&logo=Markdown&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837.svg?style=flat&logo=npm&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black) ![React](https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6.svg?style=flat&logo=TypeScript&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat&logo=ESLint&logoColor=white)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* * *
 
-## Learn More
+Table of Contents
+-----------------
 
-To learn more about Next.js, take a look at the following resources:
+*   [Overview](#overview)
+*   [Getting Started](#getting-started)
+    *   [Prerequisites](#prerequisites)
+    *   [Installation](#installation)
+    *   [Usage](#usage)
+    *   [Testing](#testing)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* * *
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Overview
+--------
 
-## Deploy on Vercel
+Solana-Wallet-Integration is a powerful developer tool designed to streamline the integration of Solana wallets into your Next.js applications, enabling seamless interactions within the decentralized finance ecosystem.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Why Solana-Wallet-Integration?**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project simplifies wallet functionalities while enhancing user experience. The core features include:
+
+*   **🔗 Seamless Wallet Integration:** Simplifies user authentication and interaction with the Solana blockchain.
+*   **📊 Real-Time Market Data:** Fetches and displays essential trading metrics, enhancing user engagement.
+*   **🖥️ User-Friendly UI Components:** Intuitive design for managing subaccounts, deposits, and withdrawals.
+*   **⚙️ Robust State Management:** Utilizes Zustand for efficient state updates, promoting a reactive application.
+*   **📡 Comprehensive API Endpoints:** Facilitates essential operations like order placement, deposits, and withdrawals.
+*   **🎨 Tailwind CSS Integration:** Streamlines styling with a utility-first approach, ensuring a consistent design.
+
+* * *
+
+Getting Started
+---------------
+
+### Prerequisites
+
+This project requires the following dependencies:
+
+*   **Programming Language:** TypeScript
+*   **Package Manager:** Npm
+
+### Installation
+
+Build Solana-Wallet-Integration from the source and intsall dependencies:
+
+1.  **Clone the repository:**
+    
+        ❯ git clone https://github.com/Harisafzal03/Solana-Wallet-Integration
+        
+    
+2.  **Navigate to the project directory:**
+    
+        ❯ cd Solana-Wallet-Integration
+        
+    
+3.  **Install the dependencies:**
+    
+
+**Using [npm](https://www.npmjs.com/):**
+
+    ❯ npm install
+    
+
+### Usage
+
+Run the project with:
+
+**Using [npm](https://www.npmjs.com/):**
+
+    npm start
+    
+
+### Testing
+
+Solana-wallet-integration uses the {**test\_framework**} test framework. Run the test suite with:
+
+**Using [npm](https://www.npmjs.com/):**
+
+    npm test
+    
+
+* * *
+
+[⬆ Return](#top)
+
+* * *
